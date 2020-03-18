@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing:border-box;
+}
+body
+{
+	margin:0px;
+	
+}
+#logo
+{
+	max-height:150px;
+	max-width:190px;
+	
+}
+#c2
+{
+	float:right;
+	margin-top:-110px;
+	padding:5px 40px 5px 5px;
+}
+#p2
+{
+	position:relative;
+	text-align:center;
+}
+.responsive
+{
+	margin-top:20px;
+	width:60%;
+	height:auto;
+
+}
+#p3
+{
+	position:relative;
+	text-align:center;
+}
+
+#p4
+{
+	position:relative;
+	text-align:center;
+}
+
+#p5
+{
+	position:relative;
+	text-align:center;
+}
+
+

@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+body
+{
+	margin:0px;
+}
+#logo
+{
+	max-height:150px;
+	max-width:190px;
+	
+}
+#c2
+{
+	float:right;
+	margin-top:-110px;
+	padding:5px 40px 5px 5px;
+}
+#p3
+{
+	background-image:linear-gradient(black,#999,#000);
+	height:600px;
+	width:100%;
+}
+#p2
+{
+	background-image:url(shutterstock_506777470.jpg);
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:center;
+	height:100%;
+}
+.c2
+{
+	padding-top:70px;
+}
+.rounded
+{
+	height:50px;
+	width:220px;
+	background-color:#F90;
+}
+.text-danger
+{
+	margin-top:30px;
+	margin-left:20px;
+}
+.text-muted
+{
+	margin-top:25px;
+	margin-left:20px;
+	font-size:20px;
+}
+#p7
+{
+	background-color:rgba(153,153,153,0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#regForm 
+{
+	border:2px solid black;
+  background-color:rgba(0,102,255,0.8);
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+#c3
+{
+	border-radius:10px;
+	width:100%;
+	min-height:50px;   
+	background-color:rgba(204,204,204,0.9);
+}
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+
+.step.finish {
+  background-color: #4CAF50;
+}
+
+#p8
+{
+	color:#000;
+}
+
+#p6
+{
+	margin-top:10px;
+}
+#c13
+{
+	margin-left:30px;
+	float:left;
+}
+
+#ftrlogo
+{
+	height:200px;
+}
+
+#c14
+{
+	width:500px;
+	border:0px solid;
+	float:right;
+	margin-right:150px;
+	margin-top:35px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row
+{
+	margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}

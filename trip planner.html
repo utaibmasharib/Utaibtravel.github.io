@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRIP PLANNER</title>
+<link href="trip planner stylel.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div id="p1">
+<div>
+<a href="Welcome to our site.html"><img id="logo" src="logo Utaib.png"></a>
+</div>
+
+<div id="c2">
+<b>CALL OR TEXT US 24/7: +92-3406097735</b>
+</div>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="Welcome to our site.html">HOME</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="trip planner.html">TRIP PLANNER</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="special.html">SPECIAL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Business class.html">BUSINESS CLASS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="planning tips.html">PLANNING TIPS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About Us.html">ABOUT US</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT US</a>
+      </li>       
+    </ul>
+  </div>  
+</nav>
+<!---------------------------------------------nav END------------------------------>
+
+<p style="margin-top:30px; font-size:1.4vw; color:#666; padding:10px;">Planning a trip is just as tiresome as it is pleasant and fun. So many things to be done and kept in mind: stuff to pack, flight tickets, hotel and car reservations, time of check-ins and departures, confirmation numbers, addresses… Preparations turn into a total mess when one tries to keep all this information in perfect order.<br>
+
+A travel planning application can take on this messy part of the travel routine. It can be a nice helping tool to have all of the necessary info in just one place always at hand whenever it is needed. And no more printing out tickets and reservations!<br>
+
+In the article, we’re going to talk about how to build a travel planning app, which features it should possess, and what steps you should take to build a viable product.</p>
+
+<h1 style="font-size:3vw; color:#333; margin-top:10px; padding:10px;">Trip Planner Features:</h1>
+<ol>
+<li style="font-size:1.4vw; color:#666;">Our trip planners integrate information services other than point-to-point trip planning into their user interface, for example to provide timetables for routes, real-time arrivals and departures at stops, or real-time disruption notices. Additional visualisations may be offered; Google, for example, has a Grand chart like 'Schedule explorer' that can be used to visualise the relative timings of different trip plans. Another powerful visualisation is the Isochrone map which shows relative travel times as relative distances.</li>
+
+<li style="font-size:1.4vw; color:#666;">Our trip planner also have more than one user interface, with each optimised for different purposes. For example, online self-service done with a Web browser, an interface for call centre agents, one for use on mobile devices, or special interfaces for visually impaired users.</li>
+
+<li style="font-size:1.4vw; color:#666;">Our commercial trip planners include aspects of discovery shopping for accommodation and activities and price comparison for some aspects of a trip.</li>
+
+</ol>
+<!------text END---------------->
+
+<h5 style="font-size:3vw; color:#C30; margin-top:-5px; padding:10px;">Begin your Journey Here:</h5>
+
+<form id="regForm" action="confirmation page.html">
+  
+  <div class="tab">
+  <h1>Enter your City list: </h1>
+    <p><input type="text" placeholder="Start City..." oninput="this.className = ''" name="fname"></p>
+    <p><input type="text" placeholder="Travelling To..." oninput="this.className = ''" name="lname"></p>
+    <p><input type="text" placeholder="Return City..." oninput="this.className = ''" name="lname"></p>
+  </div>
+    <div class="tab">
+    <h1>Details About your Trip: </h1>
+    <p><select id="c3">
+    <option>Select class of your service</option>
+    <option>Coach</option>
+    <option>Economy</option>
+    <option>Business</option>
+    <option>First</option>
+    <option>Mixed</option>
+    </select></p>
+    <p><input type="date" placeholder="Approximate Start date...." oninput="this.className = ''" name="dd"></p>
+    <p><input type="date" placeholder="Approximate End date...." oninput="this.className = ''" name="nn"></p>
+    <p><input type="number" placeholder="Persons.." oninput="this.className = ''" name="yyyy"></p>
+  </div>
+  <div class="tab">
+    <p><input type="email" placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+    <p><input type="number" placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+  </div>
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+   
+  </div>
+</form>
+
+<!----------------JAVASCRIPT START------------->
+
+
+<script>
+var currentTab = 0; 
+showTab(currentTab);
+
+function showTab(n) {
+
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  
+  var x = document.getElementsByClassName("tab");
+  
+  if (n == 1 && !validateForm()) return false;
+  
+  x[currentTab].style.display = "none";
+  
+  currentTab = currentTab + n;
+  
+  if (currentTab >= x.length) {
+    
+    document.getElementById("regForm").submit("");
+    return false;
+  }
+  
+  showTab(currentTab);
+}
+
+function validateForm() {
+  
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  
+  for (i = 0; i < y.length; i++) {
+    
+    if (y[i].value == "") {
+      
+      y[i].className += " invalid";
+      
+      valid = false;
+    }
+  }
+  
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; 
+}
+
+function fixStepIndicator(n) {
+  
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  
+  x[n].className += " active";
+}
+</script>
+
+
+<!----------------Form End--------------->
+<footer>
+
+<div id="p6">
+
+<div id="c13">
+<img id="ftrlogo" src="footer logo.jpg" alt="We move the world">
+</div>
+
+<div id="c14">
+<p><b>Utaib Travel and Tour is a registered trademark of Utaib Travel and Tour, LLC, Copyright © 2019 International, LLC is owned and operated by Bootsnall Travel Network, LLC a Washington Corporation</b></p>
+</div>
+</div>
+
+</footer>
+
+<!--------Footer END-------------->
+
+
+
+</body>
+</html>

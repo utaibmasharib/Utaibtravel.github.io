@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#logo
+{
+	height:120px;
+	width:170px;
+	
+}
+#c2
+{
+	float:right;
+	margin-top:-120px;
+	padding:5px 100px 5px 5px;
+}
+.nav
+{
+	float:left;
+	margin-left:250px;
+	margin-top:-70px;
+}
+.frm
+{
+	background-image:url(2ce6269b4f2508a8308c7505222c0f53.jpg);
+	width:100wh;
+	height:700px;;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-size:cover;
+	margin-left:0px;
+}
+b{
+	color:#FFF;
+}
+
+#p2
+{
+	padding-top:20px;
+	height:550px;
+	width:270px;
+	background-image:linear-gradient(#666,#000);
+	border-radius:10px;
+}
+#p5
+{
+	margin-top:-90px;
+	padding:75px;
+}
+#c9
+{
+	float:left;
+	padding:40px;
+}
+#c10
+{
+	float:left;
+	padding:40px;
+}
+#c11
+{
+	float:left;
+	padding:40px;
+}
+#c12
+{
+	float:left;
+	padding:40px;
+}
+#p6
+{
+	margin-top:-50px;
+}
+#c13
+{
+	margin-left:70px;
+	float:left;
+}
+
+#ftrlogo
+{
+	height:150px;
+}
+
+#c14
+{
+	width:500px;
+	border:0px solid;
+	float:right;
+	margin-right:100px;
+	margin-top:35px;
+}

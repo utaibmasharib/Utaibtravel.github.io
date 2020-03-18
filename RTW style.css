@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
+}
+body
+{
+	margin:0px;
+}
+#logo
+{
+	max-height:150px;
+	max-width:190px;
+	
+}
+#c2
+{
+	float:right;
+	margin-top:-110px;
+	padding:5px 40px 5px 5px;
+}
+#p2
+{
+	margin-left:30px;
+}
+
+#p5
+{
+	margin-top:-70px;
+	padding:75px;
+}
+#c9
+{
+	float:left;
+	padding:40px;
+}
+#c10
+{
+	float:left;
+	padding:40px;
+}
+#c11
+{
+	float:left;
+	padding:40px;
+}
+#c12
+{
+	float:left;
+	padding:40px;
+}
+#p6
+{
+	margin-top:-50px;
+}
+#c13
+{
+	margin-left:70px;
+	float:left;
+}
+
+#ftrlogo
+{
+	height:150px;
+}
+
+#c14
+{
+	width:500px;
+	border:0px solid;
+	float:right;
+	margin-right:100px;
+	margin-top:35px;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row
+{
+	margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+#p6
+{
+	margin-top:20px;
+}
+#c13
+{
+	margin-left:30px;
+	float:left;
+}
+
+#ftrlogo
+{
+	height:200px;
+}
+
+#c14
+{
+	width:500px;
+	border:0px solid;
+	float:right;
+	margin-right:150px;
+	margin-top:35px;
+}
+
